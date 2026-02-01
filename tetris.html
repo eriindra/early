@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Game 🎮</title>
+  <link rel="stylesheet" href="css/tetris.css">
+</head>
+<body>
+  <div class="console">
+    <div class="top-bar">
+      <div class="power">
+        <div class="power-led"></div>
+        <span>POWER</span>
+      </div>
+      <div class="brand">TETRIS MODE</div>
+    </div>
+
+    <div class="screen-container">
+      <div class="screen">
+        <!-- Game Header -->
+        <div class="game-header">
+          <div class="score-section">
+            <span class="label">SCORE</span>
+            <span class="score-value" id="score">0</span>
+          </div>
+          <div class="level-section">
+            <span class="label">LEVEL</span>
+            <span class="level-value" id="level">1</span>
+          </div>
+        </div>
+
+        <!-- Game Canvas -->
+        <div class="game-area">
+          <canvas id="tetris-canvas" width="160" height="224"></canvas>
+          
+          <!-- Start Screen -->
+          <div class="start-screen" id="start-screen">
+            <div class="start-content">
+              <div class="tetris-logo">TETRIS</div>
+              <div class="start-text">Press START<br>to Begin</div>
+              <div class="blink-cursor">▶</div>
+            </div>
+          </div>
+
+          <!-- Game Over Popup -->
+          <div class="game-over-popup" id="game-over-popup">
+            <div class="popup-content">
+              <div class="game-over-title">GAME OVER!</div>
+              <div class="final-score">
+                <span class="label">FINAL SCORE</span>
+                <span class="value" id="final-score">0</span>
+              </div>
+              <div class="final-level">
+                <span class="label">LEVEL REACHED</span>
+                <span class="value" id="final-level">1</span>
+              </div>
+              <button class="restart-btn" id="restart-btn">
+                <span class="restart-icon">↻</span>
+                RESTART
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Piece Preview -->
+        <div class="next-piece-container">
+          <div class="next-label">NEXT</div>
+          <canvas id="next-canvas" width="80" height="80"></canvas>
+        </div>
+
+        <div class="screen-info">TETRIS GAME v1.0</div>
+      </div>
+    </div>
+
+    <!-- Game Controls Info -->
+    <div class="menu-buttons">
+      <button class="btn blue" id="pause-btn">⏸ PAUSE</button>
+      <button class="btn red" id="reset-btn">↻ RESET</button>
+    </div>
+
+    <div class="controls">
+      <div class="dpad-container">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up" id="dpad-up"><span class="dpad-arrow">▲</span></button>
+          <button class="dpad-btn dpad-left" id="dpad-left"><span class="dpad-arrow">◀</span></button>
+          <div class="dpad-center"></div>
+          <button class="dpad-btn dpad-right" id="dpad-right"><span class="dpad-arrow">▶</span></button>
+          <button class="dpad-btn dpad-down" id="dpad-down"><span class="dpad-arrow">▼</span></button>
+        </div>
+      </div>
+
+      <div class="ab-buttons">
+        <button class="ab-btn b-btn" id="back-btn">B</button>
+        <button class="ab-btn a-btn" id="rotate-btn">A</button>
+      </div>
+    </div>
+
+    <div class="bottom-controls">
+      <button class="control-btn">SELECT</button>
+      <button class="control-btn" id="start-btn">START</button>
+    </div>
+
+    <div class="speaker">
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+    </div>
+  </div>
+
+  <script src="js/tetris.js"></script>
+</body>
+</html>

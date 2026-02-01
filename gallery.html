@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Photo Gallery 📷</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <audio id="galleryMusic" loop>
+  <source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+</head>
+<body>
+  <div class="console">
+    <div class="top-bar">
+      <div class="power">
+        <div class="power-led"></div>
+        <span>POWER</span>
+      </div>
+      <div class="brand">GALLERY MODE</div>
+    </div>
+
+    <div class="screen-container">
+      <div class="screen">
+        <!-- Gallery Header -->
+        <div class="gallery-header">
+          <span class="icon">📷</span>
+          <span class="photo-counter" id="photo-counter">1/6</span>
+        </div>
+
+        <!-- Polaroid Display -->
+        <div class="polaroid-container" id="polaroid-container">
+          <div class="polaroid" id="polaroid">
+            <div class="polaroid-photo">
+              <img src="" alt="Memory" id="current-photo">
+            </div>
+            <div class="polaroid-caption" id="polaroid-caption">
+              Loading...
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="dots" id="navigation-dots"></div>
+
+
+        <div class="screen-info">PHOTO GALLERY v1.0</div>
+      </div>
+    </div>
+
+    <!-- Gallery Controls -->
+    <div class="menu-buttons">
+      <button class="btn blue" id="prev-btn">◀ PREV</button>
+      <button class="btn red" id="next-btn">NEXT ▶</button>
+    </div>
+
+    <div class="controls">
+      <div class="dpad-container">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up"><span class="dpad-arrow">▲</span></button>
+          <button class="dpad-btn dpad-left" id="dpad-left"><span class="dpad-arrow">◀</span></button>
+          <div class="dpad-center"></div>
+          <button class="dpad-btn dpad-right" id="dpad-right"><span class="dpad-arrow">▶</span></button>
+          <button class="dpad-btn dpad-down"><span class="dpad-arrow">▼</span></button>
+        </div>
+      </div>
+
+      <div class="ab-buttons">
+        <button class="ab-btn b-btn" id="back-btn">B</button>
+        <button class="ab-btn a-btn" id="view-btn">A</button>
+      </div>
+    </div>
+
+    <div class="bottom-controls">
+      <button class="control-btn">SELECT</button>
+      <button class="control-btn" id="start-btn">START</button>
+    </div>
+
+    <div class="speaker">
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+    </div>
+  </div>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>

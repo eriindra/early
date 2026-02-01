@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERIINDRAA Console</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="console">
+    <div class="top-bar">
+      <div class="power">
+        <div class="power-led"></div>
+        <span>POWER</span>
+      </div>
+      <div class="brand">ERIINDRAA</div>
+    </div>
+
+    <div class="screen-container">
+      <div class="screen">
+        <h1>Happy<br>Birthday!</h1>
+        <p>Press Start Button</p>
+        <div class="screen-info">DOT MATRIX WITH STEREO SOUND</div>
+        <div class="battery-indicator">
+          <div class="battery-led"></div>
+          <span>BATTERY</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-buttons">
+      <button class="btn blue" data-screen="message" onclick="testClick('message')">MESSAGE</button>
+      <button class="btn red" data-screen="gallery" onclick="testClick('gallery')">GALLERY</button>
+      <button class="btn purple" data-screen="music" onclick="testClick('music')">MUSIC</button>
+      <button class="btn green" data-screen="tetris" onclick="testClick('tetris')">TETRIS</button>
+    </div>
+
+    <div class="controls">
+      <div class="dpad-container">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up"><span class="dpad-arrow">▲</span></button>
+          <button class="dpad-btn dpad-left"><span class="dpad-arrow">◀</span></button>
+          <div class="dpad-center"></div>
+          <button class="dpad-btn dpad-right"><span class="dpad-arrow">▶</span></button>
+          <button class="dpad-btn dpad-down"><span class="dpad-arrow">▼</span></button>
+        </div>
+      </div>
+
+      <div class="ab-buttons">
+        <button class="ab-btn b-btn">B</button>
+        <button class="ab-btn a-btn">A</button>
+      </div>
+    </div>
+
+    <div class="bottom-controls">
+      <button class="control-btn" id="select-btn">SELECT</button>
+      <button class="control-btn" id="start-btn">START</button>
+    </div>
+
+    <div class="speaker">
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+    </div>
+  </div>
+
+  
+  <!-- Load main script AFTER test -->
+  <script src="js/script.js"></script>
+</body>
+</html>

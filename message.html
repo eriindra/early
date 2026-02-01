@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Message 💌</title>
+  <link rel="stylesheet" href="css/message.css">
+  <audio id="messageMusic" loop>
+  <source src="music/cant smile.mp3" type="audio/mpeg">
+</audio>
+</head>
+<body>
+  <div class="console">
+    <div class="top-bar">
+      <div class="power">
+        <div class="power-led"></div>
+        <span>POWER</span>
+      </div>
+      <div class="brand">MESSAGE MODE</div>
+    </div>
+
+    <div class="screen-container">
+      <div class="screen">
+        <!-- Message Header -->
+        <div class="message-header">
+          <span class="icon">💌</span>
+          <span class="page-counter" id="page-counter">1/3</span>
+        </div>
+
+        <!-- Message Content with typing effect -->
+        <div class="message-content">
+          <p class="greeting" id="greeting"></p>
+          <p class="message-text" id="message-text"></p>
+          <p class="signature" id="signature"></p>
+        </div>
+
+        <!-- Typing indicator -->
+        <div class="typing-indicator" id="typing-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="screen-info">MESSAGE VIEWER v1.0</div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="menu-buttons">
+      <button class="btn blue" id="prev-btn">◀ PREV</button>
+      <button class="btn green" id="next-btn">NEXT ▶</button>
+    </div>
+
+    <div class="controls">
+      <div class="dpad-container">
+        <div class="dpad">
+          <button class="dpad-btn dpad-up"><span class="dpad-arrow">▲</span></button>
+          <button class="dpad-btn dpad-left" id="dpad-left"><span class="dpad-arrow">◀</span></button>
+          <div class="dpad-center"></div>
+          <button class="dpad-btn dpad-right" id="dpad-right"><span class="dpad-arrow">▶</span></button>
+          <button class="dpad-btn dpad-down"><span class="dpad-arrow">▼</span></button>
+        </div>
+      </div>
+
+      <div class="ab-buttons">
+        <button class="ab-btn b-btn" id="back-btn">B</button>
+        <button class="ab-btn a-btn">A</button>
+      </div>
+    </div>
+
+    <div class="bottom-controls">
+      <button class="control-btn">SELECT</button>
+      <button class="control-btn" id="start-btn">START</button>
+    </div>
+
+    <div class="speaker">
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+      <div class="speaker-hole"></div>
+    </div>
+  </div>
+
+  <script src="js/message.js"></script>
+</body>
+</html>
